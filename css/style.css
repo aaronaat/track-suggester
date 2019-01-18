@@ -1,0 +1,18 @@
+body {
+  margin:100px 100px 100px 100px;
+  background-color:#ccc;
+}
+p {
+  font:tahoma;
+  font-weight: bold;
+  font-size:16px;
+}
+select {
+  max-width:300px;
+}
+select option{
+    margin:4px;
+    background: #09a;
+    font-weight:bold;
+    font-size:13px
+}
