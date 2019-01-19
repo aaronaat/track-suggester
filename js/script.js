@@ -4,7 +4,6 @@ $(document).ready(function() {
         var java = 0
         var php = 0
         var ruby = 0
-
          if ($('#company').find(":selected").text() === "Working at a large corporation.") {
            c++
            java++
@@ -65,13 +64,20 @@ $(document).ready(function() {
          }
 
          if(c + java > ruby + php) {
-           alert("Looks like you might prefer Java or C#!  Your preferred programming language scores are C#: " + c + ".   Java: " + java + ".   PHP: " + php + ".    Ruby: "+ ruby + ".")
+            alert("Looks like you might prefer Java or C#!  Your preferred programming language scores are C#: " + c + ".   Java: " + java + ".   PHP: " + php + ".    Ruby: "+ ruby + ".")
+           $("#javac").show();
            }
            else if (ruby + java > c + php) {
-            alert("Looks like you might prefer Ruby or Java!  Your preferred programming language scores are C#: " + c + ".   Java: " + java + ".   PHP: " + php + ".    Ruby: "+ ruby + ".")
+             alert("Looks like you might prefer Ruby or Java!  Your preferred programming language scores are C#: " + c + ".   Java: " + java + ".   PHP: " + php + ".    Ruby: "+ ruby + ".")
+            $("#rubyjava").show();
            }
            else if (c + php > ruby + java) {
             alert("Looks like you might prefer C# or PHP!  Your preferred programming language scores are C#: " + c + ".   Java: " + java + ".   PHP: " + php + ".    Ruby: "+ ruby + ".")
+            $("#cphp").show();
            }
+
+          event.preventDefault();
+
     })
+
 });

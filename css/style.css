@@ -10,9 +10,18 @@ p {
 select {
   max-width:300px;
 }
-select option{
+select option {
     margin:4px;
     background: #09a;
     font-weight:bold;
     font-size:13px
+}
+#javac {
+  display:none;
+}
+#rubyjava {
+  display:none;
+}
+#cphp {
+  display:none;
 }
